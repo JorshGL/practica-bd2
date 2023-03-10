@@ -46,7 +46,7 @@ class UsersService {
       })
       return {
         success: true,
-        data: userFound
+        data: userFound,
       };
 
     } catch (err) {

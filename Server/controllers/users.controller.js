@@ -13,7 +13,7 @@ class UsersController {
     const { email, name, number, date } = req.body;
 
     if (!date || !email || !name || !number) {
-      res.status(400).end()
+      res.status(400).send("a")
       return
     }
 
