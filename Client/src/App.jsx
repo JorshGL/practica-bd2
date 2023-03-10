@@ -5,11 +5,13 @@ import {Inputs, Query, Results} from "./components"
 
 function App() {
 
+  const [userFound, setUserFound] = useState({})
+
   return (
     <div className="grid grid-cols-2 grid-rows-2 w-screen h-screen bg-[#BAD7E9] text-2xl">
       <Inputs></Inputs>
-      <Results></Results>
-      <Query></Query>
+      <Results userFound={userFound}></Results>
+      <Query setUserFound={setUserFound}></Query>
     </div>
   );
 }

@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-export const Results = () => {
+export const Results = ({ userFound }) => {
+
+  useEffect(()=>{
+    console.log(userFound)
+  }, [userFound])
+
   return (
-    <div className="row-span-2 bg-[#FCFFE7]"></div>
+    <div className="row-span-2 bg-[#FCFFE7]">{}</div>
   )
 }
